@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/imgs/img-convMoedas.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/dark-mode.css">
+
+    <script defer src="./src/js/mudar-tema.js"></script>
+    <script defer src="./src/js/index.js"></script>
+
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <header class="head">
+        <h1>Conversor de Moedas</h1>
+        <em><span>Converta valores em Real R$, em Euro € e em Dolar $</span></em>
+
+        <button class="btn-tema" onclick="mudarTema()">
+            <img src="./src/imgs/sun.png" alt="Imagem do Sol." class="img-tema" title="Mudar o tema da página">
+        </button>
+    </header>
+
+    <main class="main">
+
+        <img src="./src/imgs/img-convMoedas.png" alt="Imagem de Conversão de Moeda." class="img-conv">
+
+        <section class="section">
+
+            <div class="container">
+
+                <label for="inp-real">Insira o valor em Real<img src="./src/imgs/icon-real.png" alt="Icon da Moeda Real" class="icon-moeda">
+                    <input type="number" name="inp-real" title="insira valor em Real" id="input-real">
+                </label>
+
+                <div class="box-btn">
+                    <button class="btn" onclick="convRealDolar()">Dolar</button>
+                    <button class="btn" onclick="convRealEuro()">Euro</button>
+                    <button class="btn" onclick="convRealBitcoin()">Bitcoin</button>
+                </div>
+
+                <p class="resultado-real box-resultado"></p>
+
+            </div>
+
+            <div class="container">
+
+                <label for="inp-euro">Insira o valor em Euro<img src="./src/imgs/icon-euro.png" alt="Icon da Moeda Euro" class="icon-moeda">
+                    <input type="number" name="inp-euro" id="input-euro" title="insira valor em Euro">
+                </label>
+
+                <div class="box-btn">
+                    <button class="btn" onclick="convEuroReal()">Real</button>
+                    <button class="btn" onclick="convEuroDolar()">Dolar</button>
+                    <button class="btn" onclick="convEuroBitcoin()">Bitcoin</button>
+                </div>
+
+                <p class="resultado-euro box-resultado"></p>
+
+            </div>
+
+            <div class="container">
+
+                <label for="inp-dolar">Insira o valor em Dolar<img src="./src/imgs/icon-dollar.png" alt="Icon da Moeda Dollar" class="icon-moeda">
+                    <input type="number" name="inp-dolar" id="input-dolar" title="insira valor em Dolar">
+                </label>
+
+                <div class="box-btn">
+                    <button class="btn" onclick="convDolarReal()">Real</button>
+                    <button class="btn" onclick="convDolarEuro()">Euro</button>
+                    <button class="btn" onclick="convDolarBitcoin()">Bitcoin</button>
+                </div>
+
+                <p class="resultado-dolar box-resultado"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <h3>Attributions</h3>
+            <ul>
+                <li><a href="https://www.flaticon.com/free-icons/business-and-finance" title="business and finance icons">Business and finance icons created by Luvdat - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/coin" title="coin icons">Coin icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/euro" title="euro icons">Euro icons created by Freepik - Flaticon</a></li>
+                <li><a href="https://www.flaticon.com/free-icons/brazilian-real" title="brazilian real icons">Brazilian real icons created by NajmunNahar - Flaticon</a></li>
+            </ul>
+        </div>
+
+        <span>Desenvolvedora da página: Paola da Costa Damasceno</span>
+    </footer>
+
+</body>
+</html>

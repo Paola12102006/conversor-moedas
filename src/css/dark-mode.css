@@ -1,0 +1,37 @@
+body.dark {
+    background-color: #08352d;
+    color: #bee2dc;
+}
+
+body.dark .container label input {
+    background-color: #9ec5b7;
+}
+
+body.dark input:focus {
+    border: 1px solid #00d157;
+}
+
+body.dark .container .box-btn .btn {
+    background-color: #00ac6a4f;
+    color: #b5dbcd;
+}
+
+body.dark .container .box-resultado {
+    background-color: #8decb8a6;
+    box-shadow: 8px -8px #56c28669;
+    color: #031310;
+}
+
+body.dark footer {
+    background-color: #0653406e;
+    color: #94c9abbb;
+}
+
+body.dark footer ul li a {
+    color: #5d9274b0;
+}
+
+body.dark footer ul li a:hover {
+    /* color: #03a172; */
+    color: #5d9274;
+}
